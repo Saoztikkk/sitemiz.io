@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anılarımız – Kuzey Işıkları</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at bottom, #001d3d, #000814);
+      overflow: hidden;
+      position: relative;
+      font-family: sans-serif;
+      color: white;
+    }
+
+    /* Kuzey ışıkları */
+    .aurora {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        120deg,
+        rgba(0, 255, 150, 0.15),
+        rgba(0, 255, 150, 0.2) 10px,
+        transparent 20px,
+        transparent 40px
+      );
+      animation: auroraWave 12s ease-in-out infinite;
+      mix-blend-mode: screen;
+      filter: blur(80px);
+      z-index: 1;
+      opacity: 0.8;
+    }
+
+    @keyframes auroraWave {
+      0% { transform: translateX(-20%) translateY(0) rotate(0deg); }
+      50% { transform: translateX(10%) translateY(-5%) rotate(2deg); }
+      100% { transform: translateX(-20%) translateY(0) rotate(-1deg); }
+    }
+
+    /* Yıldızlar */
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: moveStar linear infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes moveStar {
+      from { transform: translateY(0) scale(1); opacity: 1; }
+      to { transform: translateY(100vh) scale(0.5); opacity: 0; }
+    }
+
+    /* Tablo alanı */
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    table {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-collapse: collapse;
+      padding: 1rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,255,150,0.2);
+    }
+
+    th, td {
+	border: 1px solid rgba(255,255,255,0.2);
+	padding: 12px 20px;
+	text-align: center;
+	color: #000;
+    }
+
+    th {
+      background-color: rgba(0, 255, 150, 0.2);
+    }
+  YAZIII {
+	color: #000;
+	text-decoration: underline;
+	background-color: #000;
+}
+  </style>
+</head>
+<body>
+
+  <div class="aurora"></div>
+  <div class="stars" id="stars-container"></div>
+
+  <!-- Tablo içeriği -->
+  <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <th>anılarımız</th>
+          <th>bitmedi</th>
+          <th>ayrılsak bile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="fotolar 2/20241028_205600.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar 2/Screenshot_20250411-003123_Gallery.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar 2/Screenshot_20250411-003054_Gallery.jpg" width="100" height="100" /></td>
+        </tr>
+        <tr>
+          <td><img src="fotolar 2/20250528_200055.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar 2/Screenshot_20241103-222307_Gallery.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar 2/Screenshot_20241103-222434_Gallery(1).jpg" width="100" height="100" alt="gggg" /></td>
+        </tr>
+        <tr>
+          <td><img src="fotolar 2/Screenshot_20241103-222434_Gallery.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar 2/Screenshot_20241103-222500_Gallery.jpg" width="100" height="100" alt="g" /></td>
+          <td><img src="fotolar 2/Screenshot_20241103-222522_Gallery.jpg" width="100" height="100" /></td>
+        </tr>
+        <tr>
+          <td><img src="fotolar 2/20250528_200055.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar 2/20250214_173502.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar 2/20250518_215732.jpg" width="100" height="100" /></td>
+        </tr>
+        <tr>
+          <td><img src="fotolar 2/20250518_215743.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar/Screenshot_20250309-230510_Gallery.jpg" width="100" height="100" /></td>
+          <td><img src="fotolar/Screenshot_20250309-230514_Gallery.jpg" width="100" height="100" /></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td bgcolor="#000000"><a href="anilarimiz.html">GERİ GİT</a></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <!-- Buraya istediğin kadar satır ekleyebilirsin -->
+      </tbody>
+    </table>
+  </div>
+
+<script>
+    const container = document.getElementById('stars-container');
+    for (let i = 0; i < 120; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * -100}%`;
+      star.style.animationDuration = `${2 + Math.random() * 4}s`;
+      star.style.animationDelay = `${Math.random() * 5}s`;
+      container.appendChild(star);
+    }
+  </script>
+
+</body>
+</html>

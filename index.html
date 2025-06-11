@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bizim Sitemiz 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(120deg, #fbd3e9, #bb377d);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .login-container {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 2s ease;
+    }
+    input {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 10px;
+      width: 80%;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      color: #bb377d;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .hidden {
+      display: none;
+    }
+    .main-site {
+      animation: fadeIn 2s ease;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .nav a:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container" id="loginBox">
+    <h2>💌 Sadece Bizim İçin 💌</h2>
+    <input type="password" id="password" placeholder="Şifreyi Girin">
+    <br>
+    <button onclick="checkPassword()">Giriş</button>
+  </div>
+
+  <div class="main-site hidden" id="mainSite">
+    <h1>Hoş geldin Aşkım 💖</h1>
+    <div class="nav">
+      <a href="anilarimiz.html">Anılarımız</a>
+      <a href="sananlatmak.html">Sana Demek İstediklerim</a>
+      <a href="videolarimiz.html">Videolarımız</a>
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const pw = document.getElementById("password").value;
+      if (pw === "28ekim2024") {
+        document.getElementById("loginBox").classList.add("hidden");
+        document.getElementById("mainSite").classList.remove("hidden");
+      } else {
+        alert("Şifre yanlış! 💔");
+      }
+    }
+  </script>
+</body>
+</html>
